@@ -3,7 +3,7 @@ themes i used and liked
 
 ## [slaytherqueer](https://slaytherqueer.tumblr.com)
 
-### [star thingies](https://github.com/apolitoo/vigilant-giggle/blob/main/slaytherqueer/starthingies.gif?raw=true)
+### ![star thingies](https://github.com/apolitoo/vigilant-giggle/blob/main/slaytherqueer/starthingies.gif?raw=true)
 
 
 
