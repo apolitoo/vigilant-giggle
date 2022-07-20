@@ -1,0 +1,461 @@
+<!DOCTYPE HTML>
+<head>
+<!-- 
+cutie symbol theme by emoticon equinbox ✌ ^-^ ✌
+
+special thanks:
+1) rook @emailemoji for showing me the calendar 
+2) 'anti citizen' theme (jellyparty.tumblr.com/post/629805825586774016) for inspiring me to learn how to make a heart sidebar img
+3) twilight sparkle, the princess of friendship
+
+questions, comments, concerns? e-mail me! jellyparty.tumblr.com/ask
+-->
+
+
+<!-- img -->
+<meta name="image:background" content="">
+<meta name="image:favicon" content="">
+<meta name="image:cursor" content="">
+<meta name="image:sidebar icon" content="">
+<meta name="image:footer pixel" content="">
+<meta name="image:link pixel" content="">
+
+<!-- txt -->
+<meta name="text:text size" content="18">
+<meta name="text:link one" content="link one">
+<meta name="text:link two" content="link two">
+<meta name="text:link three" content="link three">
+<meta name="text:link one url" content="/">
+<meta name="text:link two url" content="/">
+<meta name="text:link three url" content="/">
+<meta name="text:content transparency" content="0.7">
+
+<!-- color -->
+<meta name="color:background" content="">
+<meta name="color:post" content="">
+<meta name="color:text" content="">
+<meta name="color:link" content="">
+<meta name="color:link hover" content="">
+
+<meta name="color:link glow" content="">
+<meta name="color:link glow hover" content="">
+
+<meta name="color:text selection" content="">
+<meta name="color:text selection bg" content="">
+
+<meta name="color:footer" content="">
+
+<!-- selections -->
+<meta name="if:heart icon" content="">  
+<meta name="if:bold links" content="">  
+<meta name="if:link background" content="">  
+<meta name="if:link underline" content="">  
+<meta name="if:link glow" content="">  
+<meta name="if:full background" content="">  
+<meta name="if:custom cursor" content="">  
+<meta name="if:bright rainbow links" content=""> 
+<meta name="if:pastel rainbow links" content=""> 
+<meta name="if:rainbow link hover" content=""> 
+
+<!-- font -->
+<meta name="select:font" content="arial">
+<meta name="select:font" content="short stack">
+<meta name="select:font" content="ms gothic">
+<meta name="select:font" content="roboto mono">
+<meta name="select:font" content="tangerine">
+<meta name="select:font" content="amatic sc">
+
+<!-- sturf -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+<link rel="stylesheet" href="https://static.tumblr.com/qxrkgx6/RWPmgn2qa/normalize.min.css">
+<link href="https://fonts.googleapis.com/css?family=Short+Stack&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+<title>{Title}</title>
+<link rel="shortcut icon" href="{image:favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}"> 
+{block:Description}
+<meta name="description" content="{MetaDescription}" />
+{/block:Description}
+<style type="text/css">
+
+/* fundamentals */
+.npf_row {
+margin: 0 !important;}
+blockquote{
+margin: 0;}
+p{
+margin:0 0 10px 0;
+padding:0;}
+body{
+background:{color:background};
+background-image:Url('{image:background}');
+background-attachment:fixed;
+{block:iffullbackground} 
+background-size: cover;
+{/block:iffullbackground}
+color:{color:text};
+font-family:{select:font};
+word-wrap:break-word;
+{block:ifcustomcursor}
+cursor:url("{image:custom cursor}"), default;
+{/block:ifcustomcursor};
+font-size:{text:text size}px;}
+a{
+cursor:help;
+{block:ifcustomcursor}
+cursor:url("{image:custom cursor}"), default;
+{/block:ifcustomcursor};
+color:{color:link};
+text-decoration:none;
+{block:iflinkunderline}
+text-decoration:underline;
+{/block:iflinkunderline};
+{block:ifboldlinks}
+font-weight:bold;
+{/block:ifboldlinks}
+{block:iflinkglow}
+text-shadow: 0 0 10px {color:link glow}; 0 0 10px
+{/block:iflinkglow};
+{block:ifbrightrainbowlinks}
+text-decoration: none;
+color: white;
+display: inline-block;
+background-size: 120% 100%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-background-clip: text;
+-moz-text-fill-color: transparent;
+-ms-background-clip: text;
+-ms-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+transition: all 0.15s cubic-bezier(0.68, -0.25, 0.265, 1.25);
+background-image: linear-gradient(45deg, #ff0000, #ff7d00, #f6ff00, #1dff00, #00ffe9, #001fff, #8800ff, #ff00c9);
+{/block:ifbrightrainbowlinks};
+{block:ifpastelrainbowlinks}
+text-decoration: none;
+color: white;
+display: inline-block;
+background-size: 120% 100%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-background-clip: text;
+-moz-text-fill-color: transparent;
+-ms-background-clip: text;
+-ms-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+transition: all 0.15s cubic-bezier(0.68, -0.25, 0.265, 1.25);
+background-image: linear-gradient(45deg, #95cadf 0%, #a9e79a 20%, #eedb57 40%, #f9a4b0 60%, #fd87c4 80%, #bf75cc);
+{/block:ifpastelrainbowlinks};}
+a:hover{
+color:{color:link hover};
+text-decoration:none;
+{block:iflinkunderline}
+text-decoration:underline;
+{/block:iflinkunderline};
+{block:ifboldlinks}
+font-weight:bold;
+{/block:ifboldlinks}
+{block:iflinkglow}
+text-shadow: 0 0 10px {color:link glow hover}; 0 0 10px
+{/block:iflinkglow};
+{block:ifrainbowlinkhover}
+text-decoration: none;
+color: white;
+display: inline-block;
+background-size: 120% 100%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-background-clip: text;
+-moz-text-fill-color: transparent; 
+-ms-background-clip: text;
+-ms-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent; 
+transition: all 0.15s cubic-bezier(0.68, -0.25, 0.265, 1.25);
+background-image:url(https://i.stack.imgur.com/poux8.gif);
+{/block:ifrainbowlinkhover};}
+::selection{ 
+color:{color:text selection}; 
+background-color:{color:text selection bg};}
+::-webkit-scrollbar {
+width: 15px;
+height: 10px;}
+::-webkit-scrollbar-thumb:vertical{
+background-color: #fff;
+background-image: url(https://i.imgur.com/Qtm9Z60.png);
+border-top: 1px solid #bdbdbd;
+border-left: 1px solid #bdbdbd;
+border-right: 1px solid black;
+border-bottom: 1px solid black;}
+::-webkit-scrollbar-track {
+background-color: #fff;
+background-image: url(https://i.imgur.com/IGXGYKz.png);}
+::-webkit-scrollbar-button:vertical:increment {
+background-image: url(https://i.imgur.com/WhC8iy3.png);
+width: 14px;
+height: 16px;
+border-top: 1px solid #bdbdbd;
+border-left: 1px solid #bdbdbd;
+border-right: 1px solid black;
+border-bottom: 1px solid black;}
+::-webkit-scrollbar-button:vertical:decrement {
+background-image: url(https://i.imgur.com/fQ18mrR.png);
+border-top: 1px solid #bdbdbd;
+border-left: 1px solid #bdbdbd;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+width: 14px;
+height: 16px;}
+/* fundamentals end */
+
+/* content */
+#postcontent{
+margin-top:10px;
+margin-left:400px;
+width:420px;}
+.post, .naviga{
+background-color:rgba({RGBcolor:post}, {text:content transparency});
+margin:0 0 20px 0;
+overflow:hidden;
+padding:5px;}
+#sidebar{
+position:fixed;
+width:260px;
+padding:5px;}
+#linkiedinks{
+font-family:{select:font};
+font-size:25px;}
+/* content end */
+
+/* basic stylin */
+ol.notes{
+list-style-type:none;
+padding:3px;
+overflow:auto;}
+.post img{
+background-color:transparent;
+max-width:100%;}
+.sidebar img{
+background-color:transparent;
+{block:ifhearticon}
+-webkit-mask-image:url(https://64.media.tumblr.com/530d6f82ba12efe719853b50499b1d5d/b58a88777157fa9c-6e/s500x750/69a0aa24e15c4c98f2b7ce62f6c00544e0b3a1c3.png);
+-webkit-mask-repeat:no-repeat;
+-webkit-mask-size:cover;
+{/block:ifhearticon}
+{block:ifnothearticon}
+border-radius:100%;
+{/block:ifnothearticon};}
+.footer{
+background-color:{color:footer};
+margin:5px 0 0 0;
+padding:5px;}
+#table, th, td{ 
+overflow:auto;
+width:100%;
+background:transparent;}
+#c{
+font-size:20px;
+position:fixed; 
+left:0px;
+bottom:0px;}
+video{
+max-width: 100%;
+height: auto;}
+.questie{
+text-align:right;
+padding:5px;}
+#audioplayer{ 
+width:30px;
+height:25px;
+overflow:hidden;
+position:absolute;
+margin-top:40px;
+margin-bottom:40px;
+margin-left:35px;
+border-radius: 40px;
+opacity: 0.7;}
+.trackstuff{
+overflow:auto;
+margin-left:110px;
+margin-top:-75px;  
+margin-bottom:50px;
+display:block;}
+.playbutton{
+margin-bottom:30px;
+margin-top:-60px;
+margin-left:35px;
+z-index:9;
+width:33px;
+height:30px;
+overflow:hidden;}
+/* basic stylin end */
+
+{CustomCss}
+</style>
+</head>
+<body>
+<div id="linkiedinks">
+<a href="{text:link one url}">{text:link one}</a>
+<img src="{image:link pixel}">
+<a href="{text:link two url}">{text:link two}</a>
+<img src="{image:link pixel}">
+<a href="{text:link three url}">{text:link three}</a>
+</div>
+<div id="sidebar">
+<div class="sidebar img">
+<center><a href="/"><img style='height: 220px; width:250px; object-fit: cover' src='{image:sidebar icon}'/></a></center>
+</div>
+<center><fieldset style="padding:0px;border:0;margin:0px;" ><iframe src="https://calendar.sakura.ne.jp/blog_cal.html" style="background-color:#fbe;padding:0px;border:0;margin:0px;overflow:hidden; width:172px;height:213px;overflow:hidden;" ></iframe></fieldset></center>
+{block:Pagination}
+<center>
+{block:PreviousPage}
+<a href="{PreviousPage}">&#171; Back</a> 
+{/block:PreviousPage}
+{block:JumpPagination length="7"}
+{block:CurrentPage}
+<span class="current_page">{PageNumber}</span>
+{/block:CurrentPage}
+{block:JumpPage}
+<a class="jump_page" href="{URL}">{PageNumber}</a>
+{/block:JumpPage}
+{/block:JumpPagination}
+{block:NextPage}
+ <a href="{NextPage}">Next &#187;</a>
+{/block:NextPage}
+</center>
+{/block:Pagination}
+</div>
+
+<div id="postcontent">
+<div id="content">
+{block:Posts} 
+<!--{block:NoRebloggedFrom}{block:RebloggedFrom}{ReblogParentName}{/block:RebloggedFrom}{/block:NoRebloggedFrom} --> {block:ContentSource}<!-- {SourceURL}{block:SourceLogo}<img src="{BlackLogoURL}"width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />{/block:SourceLogo}
+{block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo} -->
+{/block:ContentSource}
+<div class="post">
+<!-- Text -->
+{block:Text}
+{block:Title}
+<div class="title">{Title}</div>
+{/block:Title}
+{Body}
+{/block:Text}
+{block:Chat}
+{block:Title}
+<div class="title">
+<h3><a href="{Permalink}">{Title}</a></h3></div>
+{/block:Title}
+{block:Lines}
+<div class="{Alt} user_{UserNumber}">
+{block:Label}
+<span class="label">{Label}</span>
+{/block:Label}{Line}
+</div>
+{/block:Lines}
+{/block:Chat}
+
+<!-- Images --->
+{block:Photo}
+{LinkOpenTag}
+<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+{LinkCloseTag}
+{block:Caption}
+{Caption}
+{/block:Caption}
+{/block:Photo}
+{block:Photoset}
+{Photoset-400}
+{block:Photos} 
+{/block:Photos}
+{block:Caption}
+{Caption}
+{/block:Caption}
+{/block:Photoset}
+
+<!-- Video -->
+{block:Video}
+{Video-500}
+{block:Caption}
+{Caption}
+{/block:Caption}
+{/block:Video}
+
+<!-- Audio -->
+{block:Audio}
+<div id= "audioplayer">{AudioPlayerWhite}</div>
+{block:AlbumArt}
+<div id="albumart">
+<img src="{AlbumArtURL}" width="100">  
+</div>
+{/block:AlbumArt}
+<div class="trackstuff">
+{block:TrackName}<b><i>{TrackName}</i></b>{/block:TrackName}<br>{block:Artist}<i>{Artist}</i>{/block:Artist}</div>
+{Caption}
+{/block:Audio}
+
+<!-- Quote -->
+{block:Quote}
+<div class="quote">
+"{Quote}"
+{block:Source}
+<div class="source">- <i>{Source}</i></div>
+{/block:Source}
+</div>
+{/block:Quote}
+
+<!-- Link -->
+{block:Link}
+<a href="{URL}" class="link" {Target}>{Name}</a>
+{block:Description}
+{Description}
+{/block:Description}
+{/block:Link}
+
+<!-- Ask --> 
+{block:Answer}
+<div class="questie">
+<div class="question">
+{Asker}
+{Question}
+</div>
+</div>
+<div class="caption">{Answer}</div>
+{/block:Answer}
+
+<!-- Footer -->
+{block:Date}
+<div class="footer">
+<div id="table">
+<table>
+<tr>
+<td>
+<img src="{image:footer pixel}">
+<br><a href="{Permalink}">{block:NoteCount}{NoteCount}{/block:NoteCount}</a>
+</td>
+<td>
+<a href="{Permalink}">&#9825;</a> <a href="{ReblogUrl}">&#8634;</a>
+</td>
+</tr>
+</table>
+</div>
+{block:PermalinkPage}
+{block:HasTags}{block:Tags}#<a href="{TagURL}">{Tag}</a> {/block:Tags}{/block:HasTags}
+{block:NoteCount}
+{block:PostNotes}{PostNotes}{/block:PostNotes}
+{/block:NoteCount}
+{/block:PermalinkPage}
+<!--{block:NoRebloggedFrom}{block:RebloggedFrom}{ReblogParentName}{/block:RebloggedFrom}{/block:NoRebloggedFrom} --> 
+{/block:Date}
+</div>
+</div>
+{/block:Posts}
+
+<!-- please do not edit link or remove -->
+<div id="c"><a href="https://jellyparty.tumblr.com/tagged/mine">ミ★</a></div>
+<!-- please do not edit link or remove -->
+</body>
+</html>
